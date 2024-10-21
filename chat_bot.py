@@ -122,7 +122,7 @@ def display_chat_history():
         with st.chat_message(role):
             st.markdown(content)
 
-st.title("Chatbot")
+st.title("Health AI ChatBot")
 
 # Display chat history
 display_chat_history()
