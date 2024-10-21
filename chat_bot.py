@@ -25,9 +25,9 @@ def generate_letter(chat_history):
     """
 
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-4o",
         messages=[
-            {"role": "system", "content": "You are an AI doctor and you are writing this to another doctor who has medical knowledge. Your task is to carefully analyze patient - doctor interaction and write a diagnosis letter"},
+            {"role": "system", "content": "You are an AI doctor and you are writing this to another doctor who has medical knowledge. Your task is to carefully analyze patient - doctor interaction and write a diagnosis letter and a conclusion what you think the cause is,  and furthur steps."},
             {"role": "user", "content": prompt}
         ],
         max_tokens=3000  # Increased token limit for more detailed response
